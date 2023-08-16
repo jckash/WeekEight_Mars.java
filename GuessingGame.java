@@ -5,6 +5,7 @@ import java.util.InputMismatchException;
 
 
 public class GuessingGame {
+
           public GuessingGame() {
             System.out.println("Welcome to the guessing game!");
               System.out.println("(type in your name) ");
@@ -15,12 +16,14 @@ public class GuessingGame {
 
               System.out.println("Okay " + name + ". Can you guess which number between 1 and 100 I am thinking of?");
 
+              System.out.println("Enter first integer here: ");
+
+
               Random rand = new Random();
               int number = rand.nextInt(100);
               int tries = 0;
 
-              System.out.println("Enter first integer here: ");
-              int a = myInput.nextInt();
+
 
               while (true) {
                   int guess;
@@ -43,7 +46,7 @@ public class GuessingGame {
                   } else if (guess > number) {
                       System.out.println("Your guess is too high. Try again!");
                   } else {
-                          System.out.println("Well," + name + ", you managed to guess my number!");
+                          System.out.println("Well, " + name + ", you managed to guess my number!");
                           System.out.println("You guessed the correct number in " + tries + " tries.");
                           break;
                       }
