@@ -1,24 +1,27 @@
 import java.util.Scanner;
 public class MarsExpedition {
-    public marsExpedition() {
+    public MarsExpedition() throws InterruptedException {
         Scanner input = new Scanner(System.in);
 
+
         System.out.println("The Expedition prep program is starting...");
+        Thread.sleep(800);
         System.out.println("We are gearing up...");
     System.out.println("Putting on space suit...");
         System.out.println("...");
+        Thread.sleep(800);
         System.out.println("...Ready!");
 
         System.out.println("Hello space cadet. Please state your name!");
 
         String name = input.nextLine();
 
-        System.out.println("Welcome" + name + ", to the Expedition prep Program. Are you ready to head out into the new world? Type Y or N");
+        System.out.println("Welcome " + name + ", to the Expedition prep Program. Are you ready to head out into the new world? Type Y or N");
 
         String excitement = input.nextLine();
 
         if (excitement.equalsIgnoreCase("y")) {
-            System.out.println("I knew you would say that. You are a team leader for reason");
+            System.out.println("I knew you would say that. You are a team leader for a reason!");
 } else {
             System.out.println("Too bad you are a team leader. You have to go.");
         }
@@ -40,9 +43,9 @@ public class MarsExpedition {
 
         String snack = input.nextLine();
 
-        System.out.println("How tasty! You will be bringing" + snack + "with you! (I'd make it last if I were you.)");
+        System.out.println("How tasty! You will be bringing " + snack + " with you! (I'd make it last if I were you.)");
 
-System.out.println("Now you know what you'll be eating, but what will you be driving? +" +
+System.out.println("Now you know what you'll be eating, but what will you be driving?" +
         "\n1: XL Microwave with four wheels" +
         "\n2: Space bike" +
         "\n3: Magic School Bus");
@@ -60,8 +63,8 @@ if(vehicle.equalsIgnoreCase("1")){
 }
 
 System.out.println("You are now done crafting your elite team for Mars Expedition!" +
-        "\n Your expedition will be led by the fearless" + name + "with" + teamSize + "teammates." +
-        "\nTo explore the surface of Mars using " + vehicle + "." +
+        "\n Your expedition will be led by the fearless " + name + " with " + teamSize + " teammates." +
+        "\nTo explore the surface of Mars using the " + vehicle + "." +
         "\nExploration team heads out in" +
         "\n5....." +
         "\n4....." +
