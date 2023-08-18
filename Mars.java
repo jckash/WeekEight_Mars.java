@@ -17,9 +17,9 @@ public class Mars {
         } else {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
-        landing = landingCheck(100);
-        new GuessingGame();
-        new MarsExpedition();
+//        landing = landingCheck(100);
+//        new GuessingGame();
+//        new MarsExpedition();
         new FindingsList();
     }
 

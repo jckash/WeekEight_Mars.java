@@ -41,18 +41,18 @@ public class FindingsList {
 
         System.out.println("Fossil catalogue has downloaded.");
 
-        System.out.println("Which fossil would you like to learn more about? (bird, fish, or tooth)");
+        System.out.println("Which fossil would you like to learn more about? (Bird Fossil, Fish Fossil , or Tooth Fossil)");
 
         Scanner input = new Scanner(System.in);
 
         String fossilChoice = input.nextLine();
 
-        if (fossilChoice.equalsIgnoreCase("bird")) {
-            System.out.println(fossilChoice + "\nDescription: " + fossilList.get(fossilChoice));
-        } else if (fossilChoice.equalsIgnoreCase("fish")) {
-            System.out.println(fossilChoice + "\nDescription: " + fossilList.get(fossilChoice));
-        } else if (fossilChoice.equalsIgnoreCase("tooth")) {
-            System.out.println(fossilChoice + "\nDescription " + fossilList.get(fossilChoice));
+        if (fossilChoice.equalsIgnoreCase("Bird Fossil")) {
+            System.out.println(fossilChoice + "\nDescription: " + fossilList.get("Bird Fossil"));
+        } else if (fossilChoice.equalsIgnoreCase("Fish Fossil")) {
+            System.out.println(fossilChoice + "\nDescription: " + fossilList.get("Fish Fossil"));
+        } else if (fossilChoice.equalsIgnoreCase("Tooth Fossil")) {
+            System.out.println(fossilChoice + "\nDescription " + fossilList.get("Tooth Fossil"));
         }
 
 
@@ -76,13 +76,13 @@ public class FindingsList {
 
         supplies.remove("Light plasma machete");
 
+
+
     System.out.println("Supplies After Expedition");
+    Iterator itr2 = supplies.iterator();
 
-
-
-
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
+        while (itr2.hasNext()) {
+            System.out.println(itr2.next());
         }
 
 
